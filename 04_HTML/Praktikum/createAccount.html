@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+  </head>
+  <body>
+    <div>
+      <h1>Create Account</h1>
+    </div>
+    <h2>Detail Form</h2>
+    <form action="#">
+      <div class="name">
+        <label>First name </label> <br />
+        <input type="text" required /> <br /><br />
+        <label>Last name </label> <br />
+        <input type="text" required /> <br /><br />
+      </div>
+      <div>
+        <label>Username </label> <br />
+        <input type="text" required /> <br /><br />
+        <label>Email </label> <br />
+        <input type="email" placeholder="you@example.com" required />
+        <br /><br />
+        <div class="gender">
+          <label>Gender</label><br />
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            required
+          />
+          <label for="male">Male</label><br />
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+          />
+          <label for="female">Female</label><br />
+          <input
+            type="radio"
+            id="othergender"
+            name="gender"
+            value="othergender"
+          />
+          <label for="othergender">Other</label>
+        </div>
+        <br />
+        <label>Address </label> <br />
+        <input type="text" required /><br /><br />
+        <label>Address 2 </label> <br />
+        <input type="text" /><br /><br />
+      </div>
+      <div class="nasionality">
+        <label for="cars">Nasionality :</label><br />
+        <select
+          name="nasionality"
+          id="nasionality"
+          style="width: 180px"
+          required
+        >
+          <option value="">Please Select</option>
+          <option value="tes">tes</option>
+        </select>
+        <br />
+        <br />
+      </div>
+      <div class="language-spoken">
+        <label for="">Language Spoken : </label> <br>
+        <input type="checkbox" value="Bahasa" />
+        <label for="bahasaLanguange"> Bahasa</label><br />
+        <input type="checkbox" value="English" />
+        <label for="englishLanguage"> English</label><br />
+        <input type="checkbox" value="Other" />
+        <label for="otherLanguage"> Other</label><br /><br />
+      </div>
+      <input type="Submit" value="Create Account" />
+    </form>
+  </body>
+</html>
