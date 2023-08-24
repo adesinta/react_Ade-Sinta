@@ -1,0 +1,33 @@
+a {
+    color: grey !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #71c55d !important;
+}
+
+.text-welcome {
+    margin-top: 100px !important;
+    color: #71c55d;
+    font-family: "Philosopher", sans-serif ;
+}
+
+.content-main-bg{
+    height: calc(90vh);
+    background: url(../img/hero-bg.png) bottom no-repeat;
+    background-size: 100%;
+}
+
+.background-color {
+    background-color: #e4f4e1;
+}
+
+#contact p {
+    display: inline-block;
+}
+
+
+
+
+
