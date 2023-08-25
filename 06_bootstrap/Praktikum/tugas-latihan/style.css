@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+header nav ul li a {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+main {
+    background-color: #37517E;
+    padding: 50px;
+}
+
+.getStarted {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.content-getStarted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-getStarted h1{
+    max-width: 600px;
+    word-wrap: break-word;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.content-getStarted p{
+    max-width: 600px;
+    word-wrap: break-word;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.buttonGetStarted-watchVideo {
+    padding-top: 50px;
+}
+
+#button-getStarted {
+    background-color: #47B2E4;
+    width: 147px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+#button-getStarted:hover {
+    background-color: #F3F5FA;
+    color: #37517E;
+}
+
+#button-watchVideo {
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 147px;
+    height: 40px;
+}
+
+#button-watchVideo:hover {
+    background-color: #F3F5FA;
+    color: #37517E;
+}
+
+.newsLetter {
+    background-color: #F3F5FA;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.newsLetter h3{
+    color: #37517E;
+    font-size: 24px;
+}
+
+.form-input{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.search-input {
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 600px;
+    outline: none;
+    padding-left: 20px;
+}
+
+#subscribe {
+    background-color: #47B2E4;
+    width: 147px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+    position: absolute;
+    margin-left: 500px;
+}
+
+#subscribe:hover {
+    background-color: #37517E;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px 100px 50px;
+    line-height: 30px;
+}
+
+.contact-us h4 {
+    color: #37517E;
+}
+
+.contact-us p{
+    color: #5E5E5E;
+}
+
+.address-arsha h4{
+    font-size: 28px;
+}
+
+#phone-email{
+    font-weight: 800;
+}
+
+.social-network p{
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.social-network img{
+    padding-top: 10px;
+}
+
+.copyright-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #37517E;
+    color: white;
+    padding: 30px 80px 30px 80px; 
+}
+
+#bootstrap {
+    color: #47B2E4;
+}
