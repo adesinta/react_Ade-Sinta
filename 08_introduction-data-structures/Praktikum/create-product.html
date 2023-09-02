@@ -52,32 +52,32 @@
                 <label for="producCategory" class="form-label">Product Category</label>
                 <select id="productCategory" class="form-select" aria-label="Default select example" required>
                     <option selected disabled value="">Open this select menu</option>
-                    <option value="1">Hijab</option>
-                    <option value="2">Hoodie</option>
-                    <option value="3">Sweater</option>
+                    <option value="Hijab">Hijab</option>
+                    <option value="Hoodie">Hoodie</option>
+                    <option value="Sweater">Sweater</option>
                     <div class="invalid-feedback">Please select a valid state.</div>
                   </select>
             </div>
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <label for="imageProduct" class="form-label">Image of Product</label>
                 <input type="file" class="form-control">
-            </div>
+            </div> -->
             <div class="mb-3">
                 <label for="producFreshness" class="form-label">Product Freshness</label>
                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="brandNew" checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="brandNew" value="Brand New" checked>
                     <label class="form-check-label" for="flexRadioDefault1">
                       Brand New
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="secondHand">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="secondHand" value="Second Hand">
                     <label class="form-check-label" for="flexRadioDefault2">
                      Second Hand
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="refurbished">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="refurbished" value="Refurbished">
                     <label class="form-check-label" for="flexRadioDefault2">
                       Refurbished
                     </label>
@@ -101,6 +101,24 @@
                 <button type="submit" class="btn btn-primary col-12 mb-5" onclick="addData()">Submit</button>
             </div>
         </form>
+      </div>
+      <div class="table-list mt-5">
+        <h1 class="text-center">List Product</h1>
+        <table class="table" id="dataTable">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Product Category</th>
+              <!-- <th scope="col">Image of Product</th> -->
+              <th scope="col">Product Freshness</th>
+              <th scope="col">Additional Description</th>
+              <th scope="col">Product Price</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
       </div>
       <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
