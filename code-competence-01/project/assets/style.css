@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: sticky;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+font-weight: 700;
+}
+
+header span {
+  color: #023e8a;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li {
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #023e8a;
+}
+
+.welcome-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../assets/img/togean.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-section h1{
+  font-weight: 700;
+}
+
+.welcome-section p {
+  font-weight: 300;
+}
+
+.contactUs-section {
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+  
+}
+
+.left-content {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-content h1 {
+  font-weight: 700;
+}
+.username-input {
+  display: flex !important;
+  gap: 15px !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  background-color: #023e8a;
+  color: #ffffff;
+  border-radius: 50px 50px 0px 0px;
+  padding: 60px;
+}
+
+.footer-header-section {
+  width: 600px;
+}
+
+.footer-header-section h1 {
+  font-weight: 700;
+}
+
+.phone-number-section{
+  display: flex;
+  gap: 20px;
+}
+
+.phone-number-section p{
+  padding-top: 10px;
+}
+
+.email-section {
+  display: flex;
+  gap: 20px;
+}
+
+.email-section p {
+  padding-top: 10px;
+}
+
+.location-section {
+  display: flex;
+  padding-left: 5px;
+  gap: 20px;
+}
+
+.location-section p {
+  padding-top: 10px;
+}
+
+
