@@ -10,6 +10,7 @@ const Form = () => {
   const [additionalDescription, setAdditionalDescription] = useState("");
   const [productData, setProductData] = useState([]);
   const [productToDelete, setProductToDelete] = useState(null);
+  const [imageError, setImageError] = useState('');
 
   const navigate = useNavigate();
 
@@ -32,7 +33,13 @@ const Form = () => {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    setProductImage(file);
+
+    if (file && !file.type.startsWith('image/')) {
+      setImageError('The selected file is not an image.');
+    } else {
+      setImageError('');
+      setProductImage(file);
+    }
   };
 
   const handleProductFreshnessChange = (e) => {
@@ -43,6 +50,22 @@ const Form = () => {
     setAdditionalDescription(e.target.value);
   };
 
+  const handleProductPriceChange = (e) => {
+    const value = e.target.value;
+    const priceRegex = /^[0-9]+$/;
+  
+    if (!priceRegex.test(value)) {
+      alert("Product Price must be a number, must not contain symbols.");
+      return;
+    }
+  
+    if (value.includes(".")) {
+      alert("Product Price cannot have decimal numbers.");
+      return;
+    }
+    setProductPrice(value);
+  };
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -94,7 +117,6 @@ const Form = () => {
               onChange={handleProductNameChange}
               value={productName}
               className="bg-white border border-gray-300 w-[500px] text-gray-900 text-sm rounded-lg p-2.5"
-              required
             />
           </div>
           <div className="pt-4">
@@ -104,7 +126,6 @@ const Form = () => {
               value={productCategory}
               onChange={handleProductCategoryChange}
               className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-[500px] p-2.5"
-              required
             >
               <option value="">Choose...</option>
               <option value="Hijab">Hijab</option>
@@ -117,11 +138,11 @@ const Form = () => {
             <label className="pr-[370px]">Image Of Product</label>
             <input
               type="file"
-              accept="image/*"
               onChange={handleImageChange}
               className="block w-full border rounded-lg"
               name="image"
             />
+              {imageError && <div className="text-red-500">{imageError}</div>}
           </div>
           <div className="p-4">
             <label className="pr-[365px]">Product Freshness</label>
@@ -179,11 +200,11 @@ const Form = () => {
           <div className="flex flex-col items-center gap-1">
             <label className="pr-[395px]">Product Price</label>
             <input
-              type="number"
+              type="text"
               id="productPrice"
               placeholder="$ 1"
               value={productPrice}
-              onChange={(e) => setProductPrice(e.target.value)}
+              onChange={handleProductPriceChange}
               className="bg-white border border-gray-300 w-[500px] text-gray-900 text-sm rounded-lg p-2.5"
               required
             />
