@@ -1,0 +1,28 @@
+Berikut link docs : https://docs.google.com/document/d/1AVoH0uJsIw66Jej4Sfm17NbCn2bICOncAorkmlRJp_Y/edit?usp=sharing
+
+1. Playground tanpa menggunakan template
+   - Input user : Bagaimana caranya menggunakan flowbite di vite?
+   - Output assistant :
+		Untuk menggunakan Flowbite di Vite, ikuti langkah-langkah berikut:
+		a. Instalasi Flowbite:
+		- Buka terminal dan jalankan perintah `npm install flowbite` atau `yarn add flowbite` untuk menginstal Flowbite ke dalam proyek Vite Anda.
+		- Tunggu hingga proses instalasi selesai.
+
+		b. Impor Flowbite ke dalam proyek Anda:
+		- Buka file `main.js` di direktori proyek Anda.
+		- Tambahkan baris berikut di bagian atas file untuk mengimpor Flowbite:
+		javascript
+		import 'flowbite/dist/flowbite.css';
+		
+		c. Gunakan komponen Flowbite:
+		- Sebagai contoh, kita akan menggunakan komponen tombol Flowbite.
+		- Buka file Vue komponen yang ingin Anda gunakan Flowbite.
+		- Impor komponen tombol dengan menambahkan baris berikut di bagian atas file:
+			javascript
+			import { Button } from 'flowbite';
+
+		- Tambahkan
+
+2. Playground menggunakan template "Grammar Correction"
+   - Input user : She no went to the market.
+   - Output assistant : She did not go to the market.
